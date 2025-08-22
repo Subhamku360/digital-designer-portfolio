@@ -1,0 +1,245 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "myown", sans-serif;
+  }
+
+  /* Custom Font */
+  @font-face {
+    font-family: "myown";
+    src: url("/Gilroy-FREE/Gilroy-Light.otf");
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+  }
+
+  /* Buttons */
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .btn--circle {
+    height: 52px;
+    width: 52px;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 130px;
+  }
+
+  .btn--circle:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .btn--pill {
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    position: fixed;
+  }
+
+  .btn--pill:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Hero Text */
+  .header__hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header__title {
+    font-size: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+  }
+
+  /* Footer of Header */
+  .header__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px 20px;
+  }
+
+  .header__location {
+    font-size: 30px;
+  }
+
+  .header__scroll {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .header__scroll i {
+    font-size: 20px;
+    transition: transform 0.2s linear;
+  }
+
+  .header__scroll i:hover {
+    transform: rotate(45deg);
+  }
+
+  /* ---------- Hero Image ---------- */
+  .hero-image {
+    height: 80%;
+    width: 100%;
+    background: url("pexels-jmendezrf-1536619.jpg") center/cover no-repeat;
+  }
+
+  /* ---------- About Section ---------- */
+  .about {
+    display: flex;
+    height: 72%;
+    width: 100%;
+  }
+
+  .about__text {
+    flex: 1;
+    padding: 20px 30px;
+    border-right: 3px solid black;
+  }
+
+  .about__text h1 {
+    font-size: 74px;
+    font-weight: 900;
+    padding-right: 100px;
+  }
+
+  .about__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 50px;
+  }
+
+  .about__info h1 {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .about__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about__socials i {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  /* ---------- Services Section ---------- */
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .services__box {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 95%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 50px 0;
+    gap: 20px;
+  }
+
+  .services__intro {
+    width: 25%;
+    border-right: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 80px;
+  }
+
+  .services__intro h1 {
+    font-size: 35px;
+  }
+
+  .services__intro i {
+    font-size: 35px;
+  }
+
+  .services__content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .services__row {
+    display: flex;
+    border-top: 3px solid black;
+  }
+
+  .services__row:first-child {
+    border-top: none;
+  }
+
+  .service {
+    flex: 1;
+    padding: 30px;
+  }
+
+  .service h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .service p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-right: 40px;
+  }
+
+  .service:not(:last-child) h1,
+  .service:not(:last-child) p {
+    border-right: 3px solid black;
+  }
